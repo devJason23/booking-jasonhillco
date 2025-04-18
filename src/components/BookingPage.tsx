@@ -2,7 +2,6 @@
 import React from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card } from "@/components/ui/card";
-import Image from "@/components/ui/image";
 
 const BookingPage = () => {
   const personalImages = [
@@ -23,13 +22,13 @@ const BookingPage = () => {
       </div>
 
       {/* Image Gallery */}
-      <div className="max-w-4xl mx-auto grid grid-cols-3 gap-4 mb-12">
-        {personalImages.slice(0, 3).map((src, index) => (
+      <div className="max-w-4xl mx-auto grid grid-cols-2 gap-8 mb-12">
+        {personalImages.slice(0, 2).map((src, index) => (
           <img 
             key={index} 
             src={src} 
             alt={`Personal photo ${index + 1}`} 
-            className="w-full h-auto rounded-lg shadow-md object-cover"
+            className="w-full h-[300px] rounded-lg shadow-md object-cover transition-transform duration-300 hover:scale-105"
           />
         ))}
       </div>
@@ -90,6 +89,14 @@ const BookingPage = () => {
             <p>
               I&apos;m licensed in 37 states as an Infinite Wealth Strategist and Vortex Banker, offering one-of-a-kind tax strategies along with wealth generation and preservation methods rarely accessible to the average person. My proven approaches help entrepreneurs substantially increase revenue while legally deferring income taxes.
             </p>
+            <p>
+              Let&apos;s connect to explore how my proven strategies can help you grow your business and keep more of what you earn.
+            </p>
+            <img 
+              src="/lovable-uploads/ab4a31e0-c280-4cf6-910d-b4b62d97c17c.png" 
+              alt="Landscape" 
+              className="w-full h-auto rounded-lg shadow-md mt-8 object-cover"
+            />
           </div>
         </div>
       </Card>
