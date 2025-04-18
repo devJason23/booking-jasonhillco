@@ -28,7 +28,7 @@ const BookingPage = () => {
             key={index} 
             src={src} 
             alt={`Personal photo ${index + 1}`} 
-            className="w-full h-[400px] rounded-lg shadow-md object-cover object-top transition-transform duration-300 hover:scale-105"
+            className="w-full h-[500px] rounded-lg shadow-md object-cover object-center transition-transform duration-300 hover:scale-105"
           />
         ))}
       </div>
