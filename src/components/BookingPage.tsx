@@ -1,7 +1,7 @@
-
 import React from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 
 const BookingPage = () => {
   const personalImages = [
@@ -109,6 +109,29 @@ const BookingPage = () => {
           </div>
         </div>
       </Card>
+
+      {/* Disclaimer Section */}
+      <div className="max-w-4xl mx-auto mt-12 text-sm text-gray-600">
+        <Separator className="my-8" />
+        <div className="space-y-4">
+          <p className="font-semibold">Important Disclosures:</p>
+          <p>
+            I am licensed to sell insurance and financial products in 37 states. This website and its content are for informational purposes only and should not be considered as financial, tax, or legal advice. The information presented here does not constitute an offer to sell or a solicitation of an offer to buy any securities, insurance products, or other financial products.
+          </p>
+          <p>
+            Past performance is not indicative of future results. Investment strategies, including Infinite Banking and tax deferral strategies, involve risk and may not be suitable for all investors. Results may vary, and testimonials presented do not guarantee similar outcomes for all clients.
+          </p>
+          <p>
+            Tax strategies and financial products discussed may not be suitable in all jurisdictions or for all individuals. Consult with qualified professionals, including tax advisors, attorneys, and financial advisors, before making any financial decisions or implementing any strategies discussed on this website.
+          </p>
+          <p>
+            Basketball coaching and athletic achievements mentioned are separate from financial services offered and should not be considered as qualifications for financial advice.
+          </p>
+          <p className="text-xs mt-6">
+            © {new Date().getFullYear()} All rights reserved. Insurance and Financial Services Professional.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
