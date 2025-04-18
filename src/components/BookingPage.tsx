@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card } from "@/components/ui/card";
@@ -100,7 +99,7 @@ const BookingPage = () => {
               My approach to wealth creation mirrors my coaching philosophy: strategic planning, disciplined execution, and a winning mindset.
             </p>
             <p>
-              Let's connect to explore how my proven strategies can help you grow your business and most importantly, keep more of what you earn.
+              Let's connect to explore how my proven strategies can help you grow your business, build wealth and most importantly, help you preserve it for generations to come.
             </p>
             <p>
               You Work HARD for Your Money, Let's Help You KEEP It!
