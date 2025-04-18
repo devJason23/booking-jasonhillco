@@ -27,7 +27,7 @@ const BookingPage = () => {
             key={index} 
             src={src} 
             alt={`Personal photo ${index + 1}`} 
-            className="w-full h-[300px] rounded-lg shadow-md object-cover transition-transform duration-300 hover:scale-105"
+            className="w-full h-[400px] rounded-lg shadow-md object-cover transition-transform duration-300 hover:scale-105"
           />
         ))}
       </div>
@@ -101,8 +101,8 @@ const BookingPage = () => {
               Let's connect to explore how my proven strategies can help you grow your business and keep more of what you earn.
             </p>
             <img 
-              src="/lovable-uploads/ab4a31e0-c280-4cf6-910d-b4b62d97c17c.png" 
-              alt="Landscape" 
+              src="/lovable-uploads/ee074751-1fc9-4ca9-a147-6290cb95ff4c.png" 
+              alt="Basketball coaching moment" 
               className="w-full h-auto rounded-lg shadow-md mt-8 object-cover"
             />
           </div>
