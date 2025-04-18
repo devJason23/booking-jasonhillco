@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card } from "@/components/ui/card";
@@ -27,7 +28,7 @@ const BookingPage = () => {
             key={index} 
             src={src} 
             alt={`Personal photo ${index + 1}`} 
-            className="w-full h-[400px] rounded-lg shadow-md object-cover transition-transform duration-300 hover:scale-105"
+            className="w-full h-[400px] rounded-lg shadow-md object-cover object-top transition-transform duration-300 hover:scale-105"
           />
         ))}
       </div>
