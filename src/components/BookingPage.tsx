@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card } from "@/components/ui/card";
@@ -7,7 +8,7 @@ const BookingPage = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 p-4 md:p-8">
       {/* Hero Section */}
-      <div className="max-w-4xl mx-auto text-center mb-12">
+      <div className="max-w-4xl mx-auto text-center mb-12 mt-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
           Let&apos;s Build Something Great Together
         </h1>
