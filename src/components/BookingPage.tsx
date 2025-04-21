@@ -4,14 +4,6 @@ import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
 const BookingPage = () => {
-  const personalImages = [
-    "/lovable-uploads/13f98996-0b65-4fe7-859f-14a46e2336b6.png",
-    "/lovable-uploads/5eac070c-5319-422c-92ab-8261d2de2286.png",
-    "/lovable-uploads/ab4a31e0-c280-4cf6-910d-b4b62d97c17c.png",
-    "/lovable-uploads/8bae2e98-990c-4721-b88d-6131ff14fae8.png",
-    "/lovable-uploads/b1e593e6-2f90-457d-8e5e-07052c37cb99.png"
-  ];
-
   return (
     <div className="min-h-screen bg-white text-gray-900 p-4 md:p-8">
       {/* Hero Section */}
@@ -19,18 +11,6 @@ const BookingPage = () => {
         <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
           Let&apos;s Build Something Great Together
         </h1>
-      </div>
-
-      {/* Image Gallery */}
-      <div className="max-w-4xl mx-auto grid grid-cols-2 gap-8 mb-12">
-        {personalImages.slice(0, 2).map((src, index) => (
-          <img 
-            key={index} 
-            src={src} 
-            alt={`Personal photo ${index + 1}`} 
-            className="w-full h-[500px] rounded-lg shadow-md object-cover object-center transition-transform duration-300 hover:scale-105"
-          />
-        ))}
       </div>
 
       {/* Booking Section */}
