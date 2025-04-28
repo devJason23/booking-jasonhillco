@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/booking/', // ✅ this is what makes it work when deployed at /booking
+  base: base: '/', // ✅ fixed jasonhill.co load
   server: {
     host: "::",
     port: 8080,
