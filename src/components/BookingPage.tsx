@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -9,9 +9,11 @@ import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
 import jasonProfile from "@/assets/images/Jason Hill Profile.png";
-import twoJumpingBoys from "@/assets/images/Two Jumping Into Data Sets SHP.png";
 
 const BookingPage = () => {
+  const [loading30, setLoading30] = useState(true);
+  const [loading45, setLoading45] = useState(true);
+
   return (
     <>
       {/* Hero Section */}
@@ -28,10 +30,19 @@ const BookingPage = () => {
             30-Minute Strategy Call
           </AccordionTrigger>
           <AccordionContent>
-            <div className="w-full overflow-hidden">
+            <div className="relative w-full overflow-hidden min-h-[600px]">
+              {loading30 && (
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-white z-10">
+                  <div className="w-16 h-16 border-4 border-blue-400 border-t-transparent rounded-full animate-spin mb-4"></div>
+                  <p className="text-lg font-semibold text-blue-600">
+                    Dialing In Your Private Strategy Session...
+                  </p>
+                </div>
+              )}
               <iframe
                 src="https://calendar.app.google/3tCZ3Ce3CrvT6qx36"
                 className="w-full h-[600px] border-0"
+                onLoad={() => setLoading30(false)}
               ></iframe>
             </div>
           </AccordionContent>
@@ -42,10 +53,19 @@ const BookingPage = () => {
             45-Minute Deep Dive
           </AccordionTrigger>
           <AccordionContent>
-            <div className="w-full overflow-hidden">
+            <div className="relative w-full overflow-hidden min-h-[600px]">
+              {loading45 && (
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-white z-10">
+                  <div className="w-16 h-16 border-4 border-indigo-400 border-t-transparent rounded-full animate-spin mb-4"></div>
+                  <p className="text-lg font-semibold text-indigo-600">
+                    Dialing In Your Private Strategy Session...
+                  </p>
+                </div>
+              )}
               <iframe
                 src="https://calendar.app.google/1bbQ8NYoZjFEWtY38"
                 className="w-full h-[600px] border-0"
+                onLoad={() => setLoading45(false)}
               ></iframe>
             </div>
           </AccordionContent>
@@ -72,13 +92,7 @@ const BookingPage = () => {
             I'm licensed in 17 states as an Infinite Wealth Strategist and Vortex Banker, offering one-of-a-kind tax strategies along with wealth generation and preservation methods rarely discussed publicly.
           </p>
           <p>
-            My exclusive marketing systems help clients create environments where customers eagerly seek them out. This combination of marketing expertise and financial optimization creates opportunities that scale.
-          </p>
-          <p>
             Beyond business, I'm a dedicated father, husband, and a two-time national champion basketball coach who has played, coached, officiated, and refereed more than 30,000 basketball games across the country.
-          </p>
-          <p>
-            My approach to entrepreneurship and wealth creation mirrors my coaching philosophy: strategic planning, disciplined execution, and a winning mindset.
           </p>
           <p>
             Let's connect to explore how my proven strategies can help you grow your business, build wealth, and most importantly, help you preserve it for generations to come.
