@@ -63,7 +63,7 @@ const BookingPage = () => {
             />
             <div>
               <h2 className="text-2xl font-bold text-gray-800">About Me</h2>
-              <p className="text-gray-600">Infinite Wealth Strategist & National Basketball Champion</p>
+              <p className="text-gray-600">The Vortex Banker, Infinite Wealth Strategist & Serial Entrepreneur</p>
             </div>
           </div>
           <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -80,7 +80,7 @@ const BookingPage = () => {
               Beyond business, I'm a dedicated father, husband, and a two-time national champion basketball coach who has played, coached, officiated and refereed more than 30,000 basketball games. I've experienced the sport from every angle—as a high-level player, coach, official, and parent—giving me a comprehensive understanding few others possess.
             </p>
             <p>
-              My approach to wealth creation mirrors my coaching philosophy: strategic planning, disciplined execution, and a winning mindset.
+              My approach to entrepreneurship and wealth creation mirrors my coaching philosophy: strategic planning, disciplined execution, and a winning mindset.
             </p>
             <p>
               Let's connect to explore how my proven strategies can help you grow your business, build wealth and most importantly, help you preserve it for generations to come.
