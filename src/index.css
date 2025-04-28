@@ -95,6 +95,20 @@
     @apply border-border;
   }
 
+@keyframes bounce-smooth {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+.animate-bounce-smooth {
+  animation: bounce-smooth 1.5s infinite ease-in-out;
+}
+
+  
   body {
     @apply bg-background text-foreground;
   }
