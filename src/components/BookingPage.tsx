@@ -25,6 +25,7 @@ const BookingPage = () => {
       {/* Booking Section */}
       <div className="max-w-4xl mx-auto px-4">
         <Accordion type="single" collapsible>
+          {/* 30-Minute Strategy Call */}
           <AccordionItem value="item-1" className="border-gray-200">
             <AccordionTrigger className="text-xl py-4 px-4 hover:bg-gray-100 rounded-lg transition-all">
               30-Minute Strategy Call
@@ -61,6 +62,7 @@ const BookingPage = () => {
             </AccordionContent>
           </AccordionItem>
 
+          {/* 45-Minute Deep Dive */}
           <AccordionItem value="item-2" className="border-gray-200">
             <AccordionTrigger className="text-xl py-4 px-4 hover:bg-gray-100 rounded-lg transition-all">
               45-Minute Deep Dive
@@ -74,42 +76,3 @@ const BookingPage = () => {
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="indigo"
-                      className="w-20 h-20 animate-bounce-smooth mb-4"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M8 7V3M16 7V3M3 11h18M5 20h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v11a2 2 0 002 2z"
-                      />
-                    </svg>
-                    <p className="text-2xl font-extrabold text-indigo-600 tracking-wide">
-                      Dialing In Your Private Strategy Session...
-                    </p>
-                  </div>
-                )}
-                <iframe
-                  src="https://calendar.app.google/1bbQ8NYoZjFEWtY38"
-                  className="w-full h-[600px] border-0"
-                  onLoad={() => setLoading45(false)}
-                ></iframe>
-              </div>
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
-      </div>
-
-      {/* Bio Section */}
-      <Card className="max-w-4xl mx-auto mt-12 lg:p-8 border border-gray-200 shadow-sm">
-        {/* Your existing bio content */}
-      </Card>
-
-      {/* Disclaimer Section */}
-      <div className="max-w-4xl mx-auto mt-12 text-sm text-gray-600 p-6">
-        {/* Your existing disclaimer content */}
-      </div>
-    </>
-  );
-};
-
-export default BookingPage;
